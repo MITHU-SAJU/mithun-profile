@@ -1,0 +1,82 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html, body, #root {
+  width: 100vw; 
+  height: 100vh;
+  overflow: hidden;
+  background: #FDF8F0;          /* warm cream */
+  color: #1C1917;               /* deep warm black */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar - orange theme */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: rgba(232, 155, 45, 0.35); 
+  border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: rgba(232, 155, 45, 0.55); 
+}
+
+/* Selection */
+::selection { 
+  background: rgba(232, 155, 45, 0.25); 
+  color: #1C1917; 
+}
+
+input, textarea {
+  font-family: 'Inter', sans-serif;
+  background: none; 
+  border: none; 
+  outline: none;
+  color: #1C1917;
+}
+
+/* Headings */
+h1, h2, h3, h4 { 
+  font-family: 'Space Grotesk', sans-serif; 
+}
+
+/* Cursive / Script utilities (use these classes) */
+.cursive {
+  font-family: 'Caveat', cursive;
+}
+
+.elegant-script {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* ─────────────────── CSS PARTICLE ANIMATIONS ─────────────────── */
+@keyframes starFloat {
+  0%, 100% { opacity: 0.2; transform: translateY(0) scale(1); }
+  50% { opacity: 0.5; transform: translateY(-100px) scale(1.5); }
+}
+
+/* ─────────────────── CSS MARQUEE ANIMATIONS ─────────────────── */
+@keyframes marqueeLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* ─────────────────── CSS ORB ANIMATIONS ─────────────────── */
+@keyframes orbFloat0 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -40px) scale(1.1); }
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -40px) scale(1.1); }
+}
