@@ -5,10 +5,12 @@ import AdminDashboard from './admin/AdminDashboard.jsx';
 import ProjectManager from './admin/sections/ProjectManager.jsx';
 import SkillManager from './admin/sections/SkillManager.jsx';
 import ProfileManager from './admin/sections/ProfileManager.jsx';
+import AnalyticsTracker from './components/AnalyticsTracker.jsx';
 
 function App() {
   return (
     <Router>
+      <AnalyticsTracker />
       <Routes>
         {/* Public Portfolio Route */}
         <Route path="/" element={<Portfolio />} />
